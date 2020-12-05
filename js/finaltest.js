@@ -1,5 +1,6 @@
-//Isabela Zamith, 2020
+//Isabela Zamith @isabelazamith, 2020
 //p5.js
+//Special thanks to the Coding Train p5.js tutorials on youtube! :)
 
 var song;
 var ampmusic;
@@ -14,6 +15,7 @@ var s;
 let arraymusicas
 var volhistory = [];
 
+//seleciona uma música aleatória do arraymusicas definicas no preload
 function shufflemusica() {
   arraymusicas = [song1,song2,song3,song4,song5];
   s = Math.floor(Math.random() * (arraymusicas.length - 0)) + 0;
@@ -37,6 +39,7 @@ function shufflemusica() {
   }
 }
 
+//atribui cada música na pasta assets à uma variável
 function preload() {
   song1 = loadSound('../assets/slipk.mp3');
   song2 = loadSound('../assets/ariana.mp3');
@@ -46,6 +49,9 @@ function preload() {
   shufflemusica(); 
 }
 
+//setup do p5.js, começa a tocar a música escolhida no shuffle 
+//tem algumas variáveis para input de microfone (mic, audioIn) que eu ia implementar mas 
+//decidi priorizar as músicas, vou retirar isso depois 
 function setup() {
   song.play(0.1);
   mic = new p5.AudioIn();
@@ -58,15 +64,19 @@ function setup() {
   console.log('Setup Complete')
 }
 
+//draw do p5.js 
 function draw() {
       background(252,247,248);
+
+      //getLevel da música que tá tocando
       vol = ampmusic.getLevel();
+      //guarda no array de amplitudes
       volhistory.push(vol);
       stroke(0,67,70);
-      //fill(0,67,70);
       noFill();
+
       var currentY = map(vol, 0, 1, height, 0);
-      console.log(vol)
+      //console.log(vol)
       translate(0, height / 2 - currentY);
       push();
       beginShape();
@@ -81,9 +91,6 @@ function draw() {
       }
 }
 
-  //stroke(255, 0, 0);
-  //line(width - 5, 0, width - 5, height);
-  //ellipse(100, 100, 200, vol * 200);
         
 function trocaMusica() {  
   if (song.isPlaying()) {
@@ -103,9 +110,3 @@ function toggleSong() {
         song.play();
       }
 }
- 
-
-
-
-
-//Special thanks to the Coding Train p5.js tutorials on youtube! :)
