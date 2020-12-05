@@ -1,22 +1,23 @@
 <!doctype html>
-<!-- Isabela Zamith @izamith, 2020 -->
-<html lang="pt-br"> 
+<!-- Isabela Zamith @isabelazamith, 2020 -->
+<html lang="pt-br">
+    
     <head>
-    <!-- audiovisual meta tags -->
+              <!-- p5.js js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js" integrity="sha512-rMaqGbYalDaQz0lWNF2L8DHPtf4NW+gSZomExS0LcsNyRS4Rmj21+dt97XfXCZE/E569eX72Bh//Jt1EpStgiA==" crossorigin="anonymous"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.js" integrity="sha512-KxzVm+IqxNNq0+SzT/zzd5PHxY4LPrN+v5gZJ6+JKqjeU3Cr4y/djAg5eNlKDWurn1SeKZpql/yeOMWblMSzOg==" crossorigin="anonymous"></script>
+
+    <!-- audiovisual js -->
+         <script type="text/javascript" src="../js/setupload.js"></script>  
+        <script type="text/javascript" src="../js/finaltest.js"></script>   
+       
+        <!-- audiovisual meta tags -->
         <meta name=”description” content="Visualizador de áudio. Projeto para a disciplina FIS1130 do curso de design da PUC-Rio. Aplicacão do conceito de física - Ondas em um produto de Design | 2020.2 | Isabela Zamith"/>
     <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- p5.js js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js" integrity="sha512-rMaqGbYalDaQz0lWNF2L8DHPtf4NW+gSZomExS0LcsNyRS4Rmj21+dt97XfXCZE/E569eX72Bh//Jt1EpStgiA==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.js" integrity="sha512-KxzVm+IqxNNq0+SzT/zzd5PHxY4LPrN+v5gZJ6+JKqjeU3Cr4y/djAg5eNlKDWurn1SeKZpql/yeOMWblMSzOg==" crossorigin="anonymous"></script>
-
-    <!-- audiovisual js -->
-        <script type="text/javascript" src="../js/setupload.js"></script>  
-        <script type="text/javascript" src="../js/finaltest.js"></script>   
-        <script type="text/javascript" src="../js/mic.js"></script>
-          
+       
     <!-- Open/close overlay -->
         <script type="text/javascript">
             function openOverlay() { 
@@ -25,14 +26,15 @@
             function goBack() {
                 document.getElementById("overlay").style.width = "0";
             }   
-        </script>     
+          
+           
 
+        </script>       
     <!-- Icons Iconify js -->
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js">
         </script> 
-
-    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+            <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     
     <!-- Roboto Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com"/> 
@@ -47,7 +49,10 @@
         <title>audiovisual</title>
       </head>
     
-  <body>      
+  <body>
+
+    
+         
     <!-- audio visual Content -->
     <!-- Overlay sobre -->
     <div id="overlay">
@@ -55,7 +60,8 @@
             <section class="flex-box">
                 <div class="flex-col"> 
                     <a><span  id="go-back" class="iconify" data-icon="ion:arrow-back-outline" data-inline="false" onclick="goBack()">
-                        </span></a>      
+                        </span>
+                    </a>      
                     <div class="flex-col full">
                         <span>
                             <img  class="inHeader" src="../assets/logo-claro.svg">
@@ -143,12 +149,17 @@ do curso de Design da PUC-Rio (2020.2).
          
          
      </section>
-       <div id="canvas"> </div>
-     
-       <div class="footer content">
+       <div id="canvas"> 
+    
+      </div>
+    
+      
+      <div class="footer content">
          <div class="texto-footer">
              Ícones - <i> © 2020 Iconify OÜ  </i> | Músicas  - <i>Youtube, Freesound.org</i>
           </div> 
-      </div> 
+      </div>
+        
+      
   </body>
 </html>

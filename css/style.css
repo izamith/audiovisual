@@ -1,0 +1,233 @@
+.noselect {
+    pointer-events: none;
+    text-align:center;
+    }
+
+#canvas {
+    z-index:-1;
+    height: 80%;
+    width: 100%;
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+}
+
+body {
+    background-color:#FCF7F8;
+    font-family: 'Roboto', sans-serif;
+    overflow:hidden;
+    }
+
+.container {
+     z-index: 2;
+    
+    }
+
+#circulo {
+    background: #FF785A;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+#overlay {
+    z-index:3;
+    background-image:url(../assets/onda-lateral-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right 0;
+    height: 100%;
+    width: 0%;
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,44,46,0.99); 
+    transition: 1s;
+    }
+
+.overlay-content {
+    padding:5%
+}
+
+
+#buttonOpenOverlay:hover {
+    cursor: pointer
+    }
+
+button {
+    border-radius:100%;
+    background-color: #FF785A;
+    color: #FCF7F8;
+    border:none;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s;
+    }
+
+button:hover {
+    background-color: #E86C51;
+    }
+
+button:focus {
+   outline: none;
+   }
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+    padding-top: 15%;
+    }
+
+.suspender {
+    position: relative;
+    max-width: 100%;
+    }
+
+#about {
+    position:absolute;
+    }    
+
+.soundTrack {
+    padding-top: 4%;
+    font-size: 15px;
+    }
+
+#currentTrack {
+    font-weight: bold;
+    }
+
+.centeredElements {
+    text-align:center;
+    color: #39A2AE;
+    font-size: 1rem;
+    }
+
+.shuffleButtonRow {
+    margin-bottom: 3%;
+    }
+
+.big-icon {
+    font-size: 40px; 
+    }
+
+.small-icon {
+    font-size: 30px;
+    }
+
+.footer {
+    background-color: #172A3A;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.overFooter {
+    margin-top:5%;
+    width: 100%;
+    height:7%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    }
+
+.texto-footer {
+    color:#577996;
+    font-size: 12px;
+    }
+
+.flex-box {
+    display:flex;
+    /*background: blue;*/
+    padding:5%;
+    flex-direction: row;
+    width:65%;
+    /*border:2px solid green;*/
+    color: #8FA2A2
+}
+
+
+.flex-col {
+    display:flex;
+    flex-direction: column;
+    /*border:2px solid green;*/
+}
+
+
+.full {
+    width:100%;
+    padding:0;
+  
+}
+
+.texto-meio {
+    padding-left:5%; 
+}
+
+.icone {
+    display: flex;
+    flex-direction:column;
+        align-items: center;
+}
+.legenda {
+    max-width:90px;
+    text-align:center;
+    padding-top: 13px;
+    color: #E86C51;
+    font-weight: 300;
+    }
+
+.last {
+    align-items: center;
+    justify-content: center;
+}
+
+.destaque {
+    color: white
+}
+
+#go-back {
+    color: #FF785A;
+    font-size:30px
+}
+
+#go-back:hover {
+    cursor: pointer
+    }
+
+ @media screen and (max-width: 800px) {
+        .inHeader {
+            width:43%; 
+        } 
+        .flex-box {
+            flex-direction:column;
+            margin: 0 auto;
+            text-align:center;
+         }
+     
+        .texto-meio {
+            padding-left:0; 
+        }
+         .ondas {
+             max-height: 60%;
+         }    
+    }
+
+    @media screen and (min-width: 1000px) {
+	    .inHeader {
+            width:20%
+        }
+        .overlay-content {
+            padding-top:15%;
+        }
+    }
