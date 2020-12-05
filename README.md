@@ -3,5 +3,4 @@
 
  A proposta foi aplicar um conceito 
  da física estudado durante o semestre em um produto de design. 
- O objetivo do projeto é representar visualmente 
- as ondas sonoras de uma música.
+ O objetivo do projeto é representar visualmente as ondas sonoras de uma música.
