@@ -41,11 +41,11 @@ function shufflemusica() {
 
 //atribui cada música na pasta assets à uma variável
 function preload() {
-  song1 = loadSound('../assets/slipk.mp3');
-  song2 = loadSound('../assets/ariana.mp3');
-  song3 = loadSound('../assets/exalta.mp3');
-  song4 = loadSound('../assets/18hz.wav');
-  song5 = loadSound('../assets/louis.mp3');
+  song1 = loadSound('/assets/slipk.mp3');
+  song2 = loadSound('/assets/ariana.mp3');
+  song3 = loadSound('/assets/exalta.mp3');
+  song4 = loadSound('/assets/18hz.wav');
+  song5 = loadSound('/assets/louis.mp3');
   shufflemusica(); 
 }
 
