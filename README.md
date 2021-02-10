@@ -3,10 +3,12 @@
 <h4 align="center"> Trabalho final para a disciplina FIS1130  do curso de Design da PUC-Rio (2020.2)</h4>
 </p>
 
-## <img src="assets/sobre-icone.svg" alt="AudioVisual" width="13"> Objetivo
+### <img src="assets/sobre-icone.svg" alt="AudioVisual" width="13"> Objetivo
 <p>
  A proposta foi aplicar um conceito 
  da física estudado durante o semestre em um produto de design. 
  O objetivo do projeto é representar visualmente as ondas sonoras de uma música.
  </p>
  
+
+### <img src="assets/tocandoagora-icone.svg" alt="AudioVisual" width="25"> <a href="https://izamith.github.io/audiovisual/">Experimente!</a>
