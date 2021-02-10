@@ -6,13 +6,12 @@
 ### <img src="assets/sobre-icone.svg" alt="AudioVisual" width="13"> Objetivo
 <p>
  A proposta foi aplicar um conceito 
- da física estudado durante o semestre em um produto de design. 
+ da física estudado durante o semestre em um produto de design. <br>
  O objetivo do projeto é representar visualmente as ondas sonoras de uma música.<br>
- Para tornar a visualização interessante, selecionei músicas de estilos diferentes e um <a href="https://pt.wikipedia.org/wiki/Infrassom">infrassom</a>
+ Para tornar a visualização interessante, selecionei músicas de estilos diferentes e um <a href="https://pt.wikipedia.org/wiki/Infrassom">infrassom</a>.
  </p>
  
- 
-![Alt Text](https://media.giphy.com/media/uU7IJA27RWN9Cbit96/giphy.gif)
+ <img src="https://media.giphy.com/media/uU7IJA27RWN9Cbit96/giphy.gif" alt="Video" width="800" >
  
  
 ### Tecnologias
